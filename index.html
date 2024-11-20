@@ -1,0 +1,51 @@
+<html lang="en"></html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI BUDDU - Virtual Assistant</title>
+    <link rel="shortcut icon" href="avatar.png" type="image/x-icon">
+    <link rel="stylesheet" href="vva.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body class="day-mode">
+    <section class="main">
+        <div class="toggle-container">
+            <label class="switch">
+                <input type="checkbox" id="mode-toggle">
+                <span class="slider"></span>
+            </label>
+            <span id="mode-label">Day Mode</span>
+        </div>
+        
+        <div id="voiceSelect">
+            <label>Select Voice: </label>
+            <input type="radio" id="male" name="voice" value="male" checked>
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="voice" value="female">
+            <label for="female">Female</label>
+        </div> 
+        
+        <button onclick="speak('Test message')">Test Speech</button>
+        
+        <div class="image-container">
+            <div class="image">
+                <img src="robot.png" alt="image">
+            </div>
+            <h1>V I R T U A L  B U D D Y</h1>
+            <p>I am a Virtual Assistant, How may I help you?</p>
+        </div>
+        <div class="input">
+            <button class="talk"><i class="fas fa-microphone-alt"></i></button>
+            <h1 class="content"> Click here to speak</h1>
+        </div>
+
+        <div class="history">
+            <!-- <p>If you want to check the history please click below button.</p> -->
+            <button class="hist" onclick="displayHistory()"><i class="fa fa-history"></i></button>
+            <h1 class="content">Show History</h1>
+        </div>
+        
+    </section>
+    <script src="vva.js"></script>
+</body>
+</html>
